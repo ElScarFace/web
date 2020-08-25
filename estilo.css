@@ -1,0 +1,16 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: small-caps 100%/200% serif;	
+}
+
+form {
+	padding: 50px 20px;
+	background-color: #B5FFAE;
+	margin: calc(15% + 100px);
+	margin-top: 50px;
+	padding-top: 50px;
+	margin-bottom: 50px
+}
+
+

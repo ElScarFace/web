@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1 align="center"><font color="white">Registro</h1></font>
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+<script>
+var date=new Date();var d=date.getDate();var day=(d<10)?'0'+d:d;var m=date.getMonth()+1;var month=(m<10)?'0'+m:m;var yy=date.getYear();var year=(yy<1000)?yy+1900:yy;document.write(day+"/"+month+"/"+year);
+</script><br>
+</head>
+<body background="imagenes/im.png">
+	<formset>
+		<form action="datos.php" method="POST" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Informacion de Usuario</legend>
+				Nombre:
+				<input type="text" name="nombre" size="40"autofocus required/></br></br>
+						
+				Direccion email:
+				<input type="text" name="email" size="40"autofocus required/></br></br>
+
+				<td>Ciudad:</td>
+				<td>
+				<select name="ciudad">
+					<option>Seleccione ciudad</option>
+					<option>Lima</option>
+					<option>Los olivos</option>
+					<option>Comas</option>
+					<option>SJL</option>
+					<option>Puente piedra</option>
+					<option>Surco</option>
+					<option>Miraflores</option>
+					<option>Chorillos</option>
+					<option>Rimac</option>
+					<option>Otros</option>
+				</select>
+			</td></br></br>
+			<td>Aficiones:</td></br></br>
+				<td>
+				<input type="checkbox" name="chk[]"value="deportes"/>Deportes</br></br>
+				<input type="checkbox" name="chk[]"value="coches"/>Coches</br></br>
+				<input type="checkbox" name="chk[]"value="musica"/>Musica</br></br>
+				</td>
+				<td>Sexo:</td></br></br>
+				<td>
+				<input type="radio" name="optsexo"value="Masculino"/>Masculino</br></br>
+				<input type="radio" name="optsexo"value="Femenino"/>Femenino</br></br></td>
+				<td>Foto:
+					<input name="archivo" id="archivo" type="file"/></td><br></br></br>
+
+			<input type="submit" name="enviar" >
+			<input type="reset" name="limpiar" >
+
+
+			</fieldset>
+</form>
+</formset>
+</body>
+</html>
